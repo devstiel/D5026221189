@@ -9,8 +9,8 @@
         <p>Seri Tutorial Laravel Lengkap Dari Dasar</p>
         <p>Ini adalah view blog. ada di note Blog</p>
         <p>
-            Nama    : {($nama)}
-            Alamat  : {($alamat)}
-            Umur    : {($umur)}
+            Nama    : {{$nama}} <br>
+            Alamat  : {{$alamat}} <br>
+            Umur    : {{$umur}}
     </body>
 </html>
