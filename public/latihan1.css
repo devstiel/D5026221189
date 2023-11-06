@@ -1,0 +1,21 @@
+.payment-method {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .payment-method:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .payment-method label {
+    font-weight: bold;
+  }
+  
+  /* Customize styles for selected payment method */
+  .payment-method input:checked + label {
+    color: #007bff;
+  }
