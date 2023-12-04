@@ -81,3 +81,9 @@ Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@indexnilai');
 
+Route::get('/nilaikuliah/tambahnilai','App\Http\Controllers\NilaiController@tambahnilai');
+
+Route::post('/nilaikuliah/storenilai','App\Http\Controllers\NilaiController@storenilai');
+
+
+

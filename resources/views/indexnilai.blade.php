@@ -1,9 +1,10 @@
 @extends('master2')
-@section('title', 'Database Pegawai')
+@section('title', 'Database Nilai Kuliah')
 
 @section('judul_halaman')
-    <h2>www.malasngoding.com</h2>
-    <h3>Nilai</h3>
+    <h3>Nilai Kuliah</h3>
+
+	<a href="/nilaikuliah/tambahnilai"> + Tambah Data Nilai Kuliah</a>
 
 
     <br />
