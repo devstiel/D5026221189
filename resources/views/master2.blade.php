@@ -14,7 +14,7 @@
     <div class="container">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#">Devy Relliani Saffiyah 5026221189</a>
 
         <!-- Links -->
         <ul class="navbar-nav">
