@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
 @extends('master2')
 
 @section('konten')
 	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
 	<h3>Edit Pegawai</h3>
 
+	<a href="/pegawai"> Kembali</a>
+
+	<br/>
 	<br/>
 
 	@foreach($pegawai as $p)
-	<form action="/pegawai/update" method="post">
 	<form action="/pegawai/update" method="post" class="form-horizontal">
 		{{ csrf_field() }}
+		<input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br/>
         <div class = "form-group">
             <label for = "firstname" class = "col-sm-2 control-label">Nama</label>
             <div class = "col-sm-8">
@@ -47,8 +44,4 @@
         </div>
 	</form>
 	@endforeach
-
-
-</body>
-</html>
 @endsection
