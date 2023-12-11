@@ -19,7 +19,7 @@ class KaryawanController extends Controller
     }
 
     public function tambah(){
-        // memanggil view tambah sirup
+        // memanggil view tambah karyawan
         return view('tambahKaryawan');
         }
 
