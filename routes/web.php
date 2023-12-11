@@ -95,6 +95,10 @@ Route::get('/sirup/hapusSirup/{kodesirup}','App\Http\Controllers\SirupController
 Route::get('/sirup/editSirup/{kodesirup}','App\Http\Controllers\SirupController@edit');
 Route::post('/sirup/update','App\Http\Controllers\SirupController@update');
 
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/hapus/{kodepegawai}','App\Http\Controllers\KaryawanController@hapus');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/tambahKaryawan','App\Http\Controllers\KaryawanController@tambah');
 
 
 

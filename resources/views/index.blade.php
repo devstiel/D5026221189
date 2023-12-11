@@ -2,14 +2,13 @@
 @section('title','Database Pegawai')
 
 @section('judul_halaman')
-	<h2>www.malasngoding.com</h2>
 	<h3>Data Pegawai</h3>
 
 	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
 
 	<p>Cari Data Pegawai :</p>
 	<form action="/pegawai/cari" method="GET">
-		<input class="form form-control" type="text" name="cari" placeholder="Cari Pegawai Berdasarkan Nama .." value="{{ old('cari') }}">
+		<input class="form form-control" type="text" name="cari" placeholder="Cari Pegawai Berdasarkan Nama ..." value="{{ old('cari') }}">
 		<input type="submit" value="CARI" class="btn btn-primary">
 	</form>
 

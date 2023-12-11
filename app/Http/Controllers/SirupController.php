@@ -13,9 +13,17 @@ class SirupController extends Controller
     $sirup = DB::table('sirup')->paginate(5);
 
     //mengirim data sirup ke view indexSirup
-    return view('indexSirup', ['sirup' => $sirup]);
+    return view('indexSirup', ['sirup' => $sirup, 'visitorCount' => $visitorCount]);
     }
 
+
+    public function getCount()
+    {
+        // Fetch the counter value from the database
+        $counter = Counter::where('name', 'page_visits')->first();
+
+        return $counter ? $counter->count : 0;
+    }
 
     public function cari(Request $request){
 		// menangkap data pencarian

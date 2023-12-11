@@ -29,10 +29,17 @@
             </div>
         </div>
 
-        <div class = "form-group">
-            <label for = "tersedia" class = "col-sm-2 control-label">Ketersediaan</label>
-            <div class = "col-sm-8">
-               <textarea required="required" name="tersedia" class = "form-control" id = "tersedia">{{ $s->tersedia }}</textarea>
+        <div class="form-group">
+            <label for="tersedia" class="col-sm-2 control-label">Ketersediaan</label>
+            <div class="col-sm-8">
+                <label>
+                    <input type="radio" name="tersedia" value="Y" <?php echo $s->tersedia === 'Y' ? 'checked' : ''; ?>>
+                    Y
+                </label>
+                <label>
+                    <input type="radio" name="tersedia" value="N" <?php echo $s->tersedia === 'N' ? 'checked' : ''; ?>>
+                    N
+                </label>
             </div>
         </div>
 
@@ -43,6 +50,10 @@
         </div>
 	</form>
 	@endforeach
+
+    <div>
+        <p>Visitor Count: {{ $visitorCount }}</p>
+    </div>
 
 
 </body>

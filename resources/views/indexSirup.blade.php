@@ -6,6 +6,7 @@
 
     <a href="/sirup/tambahSirup"> + Tambah Database Sirup Baru</a>
 
+
     <p>Cari Database Sirup:</p>
 	<form action="/sirup/cari" method="GET">
 		<input class="form form-control" type="text" name="cari" placeholder="Cari Sirup Berdasarkan Merk ..." value="{{ old('cari') }}">
@@ -48,6 +49,10 @@
         @endforeach
 
         </table>
+
+        <div>
+            <p>Visitor Count: {{ $visitorCount }}</p>
+        </div>
 
         {{ $sirup->links() }}
 
