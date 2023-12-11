@@ -50,22 +50,6 @@ class KaryawanController extends Controller
         return redirect('/karyawan');
     }
 
-
-    public function cari(Request $request)
-	{
-		// menangkap data pencarian
-		$cari = $request->cari;
-
-    		// mengambil data dari table karyawan sesuai pencarian data
-		$karyawan = DB::table('karyawan')
-		->where('karyawan_nama','like',"%".$cari."%")
-		->paginate();
-
-    		// mengirim data karyawan ke view index
-		return view('indexKaryawan',['karyawan' => $karyawan]);
-
-	}
-
 }
 
 
